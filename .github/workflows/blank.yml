@@ -5,7 +5,7 @@ name: Simple listing file
 # Controls when the workflow will run
 on: push
 jobs:
-  simple job:
+  simplejob:
     runs-on: ubuntu-latest
     steps:
       - name: Before checkout LS command
