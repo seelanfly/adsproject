@@ -8,7 +8,11 @@ jobs:
   simple job:
     runs-on: ubuntu-latest
     steps:
-      - name: Run a simple command
+      - name: Before checkout LS command
+        run: ls -l
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: LS output after checkout
         run: ls -l
         
   
